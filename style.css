@@ -16,10 +16,104 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 10xp;
+    font-size: 10px;
     font-family: 'Manrope', sans-serif;
 }
 body{
     font-size: 1.3rem;
     background: var(--Light-Grayish-Blue);
+}
+
+/*Card container*/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CARD*/
+.card{
+    border-radius: 1rem;
+    width: 75rem;
+    height: 30rem;;
+    position: relative;
+    box-shadow: 0 2rem  4rem hsla(217, 19%, 35%, 0.2);
+}
+
+/*CARD IMAGE*/
+.card-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+/*MAIN SECTION*/
+.main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 44.5rem;
+    background: var(--White);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    padding: 3.5rem;
+}
+
+/*FONTS*/
+h1{
+    font-size: 2.2rem;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+p{
+    color: var(--Desaturated-Dark-Blue);
+}
+.paragraph{
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+.name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: var(--bold);
+}
+/*FOOTER*/
+.footer{
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*AVATAR IMAGE*/
+.avatar-img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+/*NAME N DATE*/
+.name-date-container{
+    margin-right: 15rem;
+}
+
+/*SHARE*/
+.share-bg{
+   width: 3.3rem;
+   height: 3.3rem;
+   background: var(--Light-Grayish-Blue);
+   border-radius: 50%;
+   position: relative;
+}
+.share-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
