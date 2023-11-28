@@ -105,20 +105,22 @@ p{
 }
 
 /*SHARE*/
-.share-bg{
-   width: 3.3rem;
-   height: 3.3rem;
-   background: var(--Light-Grayish-Blue);
+.share-container{
    border-radius: 50%;
    position: relative;
 }
 .share-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    background: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    background-image: url('images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+.share-img:hover{
+    cursor: pointer;
+}
 /*TOOLTIP*/
 .tooltip{
     width: fit-content;
@@ -153,16 +155,57 @@ p{
 .tooltip img:hover{
     cursor: pointer;
 }
-.share-bg:hover .tooltip{
-    display: flex;
-}
-.share-bg:hover .arrow{
-    display: block;
-}
-
 
 /*RESPONSIVNESS*/
 
 @media  (max-width: 716px) {
+    .container{
+        padding: 7rem 0 0 0;
+        align-items: flex-start;
+    }
+    .card{
+        width: 32rem;
+        height: 52rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-img{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .main{
+        padding-bottom: 2rem;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        border-radius: 0 0 1rem 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .paragraph{
+        margin-right: 2.4rem;
+    }
+    .name-date-container{
+        margin-right: 5rem;
+    }
+    .share-img{
+    }
+    .tooltip{
+        padding: 2.3rem 7.5rem;
+        top: -1rem;
+        left: -25.2rem;
+        border-radius: 0 0 1rem 1rem;
+    }
     
+    .arrow{
+        border: 0;
+        width: 0;
+    }
 }
